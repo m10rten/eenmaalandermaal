@@ -1,0 +1,22 @@
+.container-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.developer-card-image {
+    border-radius: 50%;
+    width: 170px !important;
+    height: 170px !important;
+    object-fit: cover;
+}
+
+.margin-right-20 {
+    margin-right: 20px !important;
+}
+

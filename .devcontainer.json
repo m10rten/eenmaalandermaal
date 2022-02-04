@@ -1,0 +1,7 @@
+{
+    "name": "php",
+    "dockerComposeFile": ["docker-compose.yml"],
+    "service": "webserver",
+    "workspaceFolder": "/srv/webserver",
+    "shutdownAction": "none",
+}

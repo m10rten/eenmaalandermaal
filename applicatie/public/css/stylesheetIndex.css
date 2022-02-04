@@ -1,0 +1,99 @@
+h1.index, h2.index, h4.index{
+    font-weight: 700;
+}
+
+h5.link{
+    margin: 0;
+    font-weight: 700;
+    color: black !important;
+}
+
+h5.index{
+    font-weight: 500;
+    font-size: 32px;
+    color: black;
+}
+
+.card-image{
+    width: 100%;
+    height: 100%;
+}
+
+#header h1 {
+    margin-top: 7rem;
+}
+
+#header{
+    height: 300px;
+}
+
+.cd-dropdown {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-100%);
+    transition: transform 0.5s;
+  }
+  .cd-dropdown.dropdown-is-active {
+    transform: translateY(0);
+  }
+
+  .cd-dropdown-content.is-hidden, .cd-dropdown-content ul.is-hidden {
+    /* push the secondary dropdown items to the right */
+    transform: translateX(100%);
+  }
+  
+  .cd-dropdown-content.move-out > li > a, .cd-dropdown-content ul.move-out > li > a {
+    /* push the dropdown items to the left when secondary dropdown slides in */
+    transform: translateX(-100%);
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .cd-dropdown {
+      position: absolute;
+      top: 100%;
+      /* reset style*/
+      height: auto;
+      width: auto;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(30px);
+      transition: opacity 0.3s 0s, visibility 0s 0.3s, transform 0.3s 0s;
+    }
+    .cd-dropdown.dropdown-is-active {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.3s 0s, visibility 0.3s 0s, transform 0.3s 0s;
+    }
+  
+    .cd-dropdown-content {
+      /* reset mobile style */
+      position: static;
+      height: auto;
+      width: 280px;
+    }
+    .cd-dropdown-content .cd-secondary-dropdown, .cd-dropdown-content .cd-dropdown-gallery, .cd-dropdown-content .cd-dropdown-icons {
+      transform: translateX(0);
+      left: 100%;
+      height: auto;
+    }
+    .cd-dropdown-content .cd-secondary-dropdown.is-hidden, .cd-dropdown-content .cd-dropdown-gallery.is-hidden, .cd-dropdown-content .cd-dropdown-icons.is-hidden {
+      /* reset mobile style */
+      transform: translateX(0);
+    }
+    .cd-dropdown-content > .has-children > ul {
+      visibility: hidden;
+    }
+    .cd-dropdown-content > .has-children:hover > ul {
+      /* when hover over .cd-dropdown-content items - show subnavigation */
+      visibility: visible;
+    }
+    .cd-dropdown-content > .has-children:hover > .cd-secondary-dropdown > li > ul {
+      /* if .cd-secondary-dropdown is visible - show also subnavigation */
+      visibility: visible;
+    }
+  }

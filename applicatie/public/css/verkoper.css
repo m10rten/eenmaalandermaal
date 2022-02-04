@@ -1,0 +1,38 @@
+.default-image-seller{
+    width: 100px;
+}
+
+p{
+    margin: 0 !important;
+}
+.info-review-box{
+    margin: 10px 0 10px 0 !important;
+}
+
+.rating-icon{
+    width: 100%;
+    margin: auto;
+    padding: 10%;
+}
+
+input[type=range]+.thumb{
+    background-color: #F5DF4D !important;
+    color: #F5DF4D !important;
+}
+input[type=range]::-webkit-slider-thumb {
+    background-color: #F5DF4D !important;
+}
+input[type=range]::-moz-range-thumb {
+background-color: #F5DF4D !important;
+}
+input[type=range]::-ms-thumb {
+background-color: #F5DF4D !important;
+}
+
+.close-button{
+    border: none;
+    cursor: pointer;
+}   
+.d-none{
+    display: none;
+}

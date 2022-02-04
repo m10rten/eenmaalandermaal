@@ -1,0 +1,39 @@
+.info-box{
+    padding: 20px 10px 10px 20px;
+    margin: 10px 0 10px 0;
+}
+.info-box .p-bold {
+    font-weight: bold;
+}
+.no-show-input{
+    display: none !important;
+}
+.bid-box .btn {
+    margin-bottom: 1.2rem;
+}
+
+.info-box .date {
+    color: grey !important;
+    margin: 0 20px;
+}
+
+.bid-login{
+    font-size: 10px !important;
+    font-weight: bold;
+    padding: 5px;
+    width: 100%;
+}
+
+.review-box{
+    top: -10px !important;
+    padding: 0 0 10px 0 !important;
+}
+.star-box > *:not(:first-child) > * > * {
+    margin-right: 2px !important;
+}
+.star-box > *  {
+    width: 100% !important;
+}
+.star-box{
+    display: flex;
+}

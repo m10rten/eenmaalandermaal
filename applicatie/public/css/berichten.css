@@ -1,0 +1,70 @@
+hr.devide{
+    width: 100%;
+    max-width: 80% !important;
+    text-align: center !important;
+    margin: 2em auto 1em auto;
+    
+}
+.chat-box{
+    background-image: url(../media/chat.jpg);
+    background-size: cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.32) ), url(../media/chat.jpg);
+    background-position:center top;
+    background-repeat: none;
+    height: 75vh;
+    margin-bottom: 0;
+    padding-left: 0 !important;
+    padding-right:0 !important;
+    overflow: auto;
+}
+.send-chat-button{
+    padding: 10px 20px 10px 20px !important;
+    left: auto;
+    right: auto;
+    margin: 10px 0 0 0 ;
+    cursor: pointer;
+    border: none;
+    align-items: center;
+    text-align: center;
+}
+.chat-message{
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    border: black;
+    line-break: auto;
+    margin: 5px 0 5px 0;
+}
+.chat-message:last-child{
+    margin-bottom: 10px;
+}
+.recieved-chat, .send-chat{
+    padding: 10px;
+    width: 200px;
+    margin: 0;
+}
+.recieved-chat{
+    border-radius: 15px 10px;
+    background: rgba(255, 255, 255, 0.89);
+    float: left;
+}
+.send-chat{
+    border-radius: 10px 15px;
+    background: rgb(171, 211, 187);
+    float: right;
+}
+.chat-block{
+    margin: 10px 0 10px 0;
+}
+
+.msg-msg-overview-box{
+    padding: 15px 0 15px 0 !important;
+}
+.overview-msg-box{
+    padding: 15px 0 0 0;
+    border-top-left-radius: 14px !important;
+    border-top-right-radius: 14px !important;
+}
+.extra-margin-chat{
+   margin: 10px 0 0 0;
+}

@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+  webserver:
+    build: .
+    command: |-
+      php -S 0.0.0.0:80 -t /srv/webserver/applicatie/public/
+    working_dir: "/srv/webserver/applicatie"
+    # TODO: check how to restrict to localhost
+    ports:
+      - target: "80"
+        published: "8000"
+        protocol: tcp
+        mode: bridge
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1"]
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    volumes:
+      - ./:/srv/webserver/:cached
